@@ -4,15 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de aumento" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de volume de caixa"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de idade por ano"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de consumo"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de média"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Conversão para Fahrenheit"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:text="Cálculo de volume de cilindro"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
