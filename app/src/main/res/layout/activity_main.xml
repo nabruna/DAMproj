@@ -7,13 +7,6 @@
     tools:context=".MainActivity"
     android:padding="10dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -74,6 +67,5 @@
                     android:layout_marginTop="10dp"/>
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
