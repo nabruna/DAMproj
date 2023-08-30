@@ -9,7 +9,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="19dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,11 +29,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/n1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 1"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/n2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 2"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/n3EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 3"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/n4EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 4"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/calculateButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MEDIA" />
+            android:text="Calcular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Média: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/avgResultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+        </LinearLayout>
     </LinearLayout>
 
 
